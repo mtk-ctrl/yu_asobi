@@ -283,9 +283,9 @@
   document.getElementById('back-btn').addEventListener('click', () => showScreen('start'));
 
   function showScreen(name) {
-    document.getElementById('start-screen').style.display = name === 'start' ? '' : 'none';
-    document.getElementById('game-screen').style.display  = name === 'game'  ? '' : 'none';
-    document.getElementById('win-screen').style.display   = name === 'win'   ? '' : 'none';
+    document.getElementById('start-screen').style.display = name === 'start' ? 'flex' : 'none';
+    document.getElementById('game-screen').style.display  = name === 'game'  ? 'block' : 'none';
+    document.getElementById('win-screen').style.display   = name === 'win'   ? 'block' : 'none';
   }
 
   function startGame() {
